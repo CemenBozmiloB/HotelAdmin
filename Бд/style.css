@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.vneshni {
+	background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	transform: translate3d(0, 0, 0);
+}
+ 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.btn_add {
+	background-image: repeating-linear-gradient(-45deg, transparent, transparent 1rem, #ccc 1rem, #ccc 2rem);
+	background-size: 200% 200%;
+	animation: gradient 10s linear infinite;
+}
+ 
+@keyframes gradient {
+	100% {
+		background-position: 100% 100%;
+	}
+}
+.vneshni{
+    display: flex;
+    border: 1px solid black;
+    margin: 30px;
+    padding: 10px;
+    min-height: 500px;
+}
+.pipisok{
+    display: flex;
+    height: 100%;
+    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.pipisok-li{
+    list-style: none;
+    cursor: pointer;
+}
+.pipisok-vvod{
+    border: 1px solid red;
+    margin-left: 20px;
+    padding: 10px;
+}
+.pipisok-pipiska{
+    display: flex;
+    padding-bottom: 10px;
+}
+.pipisok-p{
+    padding-left: 10px;
+}
+
+.pipisok-vvod{
+    display: none;
+}
+.pipisok-input{
+    min-width: 180px;
+}
+.span{
+    width: 100px;
+    height: 200px;
+}
+.include-php{
+    display: none;
+    border: 1px solid red;
+    margin-left: 20px;
+    padding: 10px;
+}
